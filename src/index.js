@@ -11,6 +11,7 @@ import {
 import ErrorNotFound from "./pages/ErrorNotFound";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Greeting from "./pages/Greeting";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/greet/:name",
+        element: <Greeting />,
       },
     ],
   },
